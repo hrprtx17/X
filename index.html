@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harpreet Singh | Product Builder & Developer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Harpreet Singh is a product builder and developer who creates innovative solutions combining elegant design with powerful functionality.">
+    <meta name="keywords" content="product developer, full-stack development, UI/UX design, product strategy, web developer">
+    <meta name="author" content="Harpreet Singh">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Harpreet Singh | Product Builder & Developer">
+    <meta property="og:description" content="Creating innovative solutions that combine elegant design with powerful functionality.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harpreet Singh | Product Builder & Developer">
+    <meta name="twitter:description" content="Creating innovative solutions that combine elegant design with powerful functionality.">
+    <meta name="twitter:image" content="profile.jpg">
+    
+    <!-- Simple favicon -->
+    <link rel="icon" href="profile.jpg">
+    <link rel="apple-touch-icon" href="profile.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-logo">H</div>
+        </div>
+    </div>
+
+    <!-- Grid Pattern -->
+    <div class="grid-overlay"></div>
+
+    <!-- Floating Mobile Navbar -->
+    <div class="mobile-float-navbar">
+      <div class="mobile-navbar-left">
+        <img src="profile.jpg" alt="Logo" class="mobile-navbar-logo" />
+        <span class="mobile-navbar-brand">Harpreet Singh</span>
+      </div>
+      <button class="mobile-navbar-menu" id="mobile-navbar-menu" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Fullscreen Mobile Nav Overlay -->
+    <div class="mobile-nav-fullscreen" id="mobile-nav-fullscreen">
+      <div class="mobile-nav-header">
+        <div class="mobile-navbar-left">
+          <img src="profile.jpg" alt="Logo" class="mobile-navbar-logo" />
+          <span class="mobile-navbar-brand">Harpreet Singh</span>
+        </div>
+        <button class="mobile-navbar-close" id="mobile-navbar-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="mobile-nav-bottom">
+        <a href="login.html" class="mobile-nav-login">Login</a>
+        <a href="signup.html" class="mobile-nav-signup">Sign Up</a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav class="floating-nav">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="profile-pic">
+                        <img src="profile.jpg" alt="Harpreet Singh">
+                    </div>
+                    <a href="#" class="site-title nav-item" style="--item: 1">HARPREET SINGH</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open mobile menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="nav-links mr-6" id="nav-links">
+                        <a href="#work" class="nav-link nav-item click-effect" style="--item: 2">Work</a>
+                        <a href="#about" class="nav-link nav-item click-effect" style="--item: 3">About</a>
+                        <a href="#expertise" class="nav-link nav-item click-effect" style="--item: 4">Expertise</a>
+                        <a href="#contact" class="nav-link nav-item click-effect" style="--item: 5">Contact</a>
+                    </div>
+                    <div class="auth-buttons ipad-auth-buttons">
+                        <a href="#" class="auth-btn login-btn click-effect" id="login-btn">Login</a>
+                        <a href="#" class="auth-btn signup-btn click-effect" id="signup-btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Sidebar Navigation (only one of each element!) -->
+    <div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay"></div>
+    <nav class="mobile-sidebar" id="mobile-sidebar">
+      <div class="sidebar-header">
+        <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="sidebar-links">
+        <a href="#work" class="sidebar-link">Work</a>
+        <a href="#about" class="sidebar-link">About</a>
+        <a href="#expertise" class="sidebar-link">Expertise</a>
+        <a href="#contact" class="sidebar-link">Contact</a>
+      </div>
+      <div class="sidebar-actions">
+        <a href="login.html" class="sidebar-btn">Login</a>
+        <a href="signup.html" class="sidebar-btn primary">Sign Up</a>
+      </div>
+    </nav>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section with Pattern Background -->
+        <section class="min-h-screen flex items-center justify-center">
+            <div class="max-w-7xl mx-auto px-8 py-20 text-center">
+                <span class="text-blue-accent text-base font-medium mb-4 block floating">PRODUCT BUILDER & DEVELOPER</span>
+                <h1 class="text-7xl md:text-8xl font-bold mb-8 tracking-tight">
+                    <span id="typing-text" class="gradient-text"></span><span class="typing-cursor">|</span>
+                </h1>
+                <p class="text-2xl md:text-3xl text-text-secondary mb-12 max-w-3xl mx-auto">
+                    I create innovative solutions that combine elegant design with powerful functionality.
+                </p>
+                <div class="buttons-container">
+                    <a href="#work" class="primary-button click-effect">View Projects</a>
+                    <a href="#contact" class="secondary-button click-effect">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work -->
+        <section id="work" class="py-20">
+            <div class="max-w-7xl mx-auto px-8">
+                <span class="text-blue-accent text-base font-medium mb-3 block">FEATURED WORK</span>
+                <h2 class="section-title mb-12">Recent Projects</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="project-card">
+                        <div class="flex items-start justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-3">Project One</h3>
+                                <p class="text-text-secondary text-lg mb-4">A comprehensive solution that revolutionizes how users interact with data.</p>
+                            </div>
+                            <a href="#" class="project-link" aria-label="View Project One">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="flex items-start justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-3">Project Two</h3>
+                                <p class="text-text-secondary text-lg mb-4">An innovative platform that transforms user experiences through AI.</p>
+                            </div>
+                            <a href="#" class="project-link" aria-label="View Project Two">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-blue-accent text-base font-medium mb-3 block">ABOUT ME</span>
+                        <h2 class="section-title mb-6">Crafting Digital Experiences</h2>
+                        <p class="text-xl text-text-secondary mb-8">
+                            With over 5 years of experience in product development, I specialize in creating intuitive and impactful digital solutions that solve real-world problems.
+                        </p>
+                        <a href="#contact" class="primary-button">Work with me</a>
+                    </div>
+                    <div class="relative">
+                        <div class="w-full aspect-square rounded-2xl overflow-hidden">
+                            <img src="profile.jpg" alt="Harpreet Singh" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="py-20">
+            <div class="max-w-7xl mx-auto px-8">
+                <span class="text-blue-accent text-base font-medium mb-3 block">EXPERTISE</span>
+                <h2 class="section-title mb-12">What I Do Best</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="expertise-card">
+                        <i class="fas fa-code text-3xl mb-6 floating-icon" style="color: #0118D8;"></i>
+                        <h3 class="text-xl font-semibold mb-4">Full-Stack Development</h3>
+                        <p class="text-text-secondary">Building scalable applications with modern technologies and best practices.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i class="fas fa-paint-brush text-3xl mb-6 floating-icon" style="color: #E9DFC3;"></i>
+                        <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                        <p class="text-text-secondary">Creating beautiful, intuitive interfaces that users love to interact with.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i class="fas fa-rocket text-3xl mb-6 floating-icon" style="color: #1B56FD;"></i>
+                        <h3 class="text-xl font-semibold mb-4">Product Strategy</h3>
+                        <p class="text-text-secondary">Transforming ideas into successful products through strategic planning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-7xl mx-auto px-8 text-center">
+                <span class="text-blue-accent text-base font-medium mb-3 block">GET IN TOUCH</span>
+                <h2 class="section-title mb-6">Let's Build Something Great</h2>
+                <p class="text-xl text-text-secondary mb-10 max-w-2xl mx-auto">
+                    Have a project in mind? I'd love to help you bring it to life.
+                </p>
+                <div class="social-links flex justify-center items-center space-x-6">
+                    <a href="https://github.com" target="_blank" class="shine-effect" style="width: 55px; height: 55px;">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="shine-effect" style="width: 55px; height: 55px;">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="shine-effect" style="width: 55px; height: 55px;">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="shine-effect" style="width: 55px; height: 55px;">
+                        <i class="fas fa-envelope text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modern minimal footer -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand-minimal">
+                    <div class="footer-logo-minimal">H</div>
+                    <span class="footer-name">Harpreet Singh</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Harpreet Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add popup components -->
+    <!-- Login Popup -->
+    <div class="popup" id="login-popup">
+        <div class="popup-content login-popup">
+            <button class="popup-close" id="close-login">&times;</button>
+            <h3 class="popup-title">Login</h3>
+            <div class="popup-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" class="form-input" placeholder="Your password" required>
+                    </div>
+                    <button type="submit" class="form-submit click-effect">Log In</button>
+                </form>
+                <p class="text-center mt-4 text-sm">
+                    Don't have an account? <a href="#" id="switch-to-signup" class="text-primary">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Popup -->
+    <div class="popup" id="signup-popup">
+        <div class="popup-content signup-popup">
+            <button class="popup-close" id="close-signup">&times;</button>
+            <h3 class="popup-title">Create Account</h3>
+            <div class="popup-body">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" class="form-input" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="form-submit click-effect">Sign Up</button>
+                </form>
+                <p class="text-center mt-4 text-sm">
+                    Already have an account? <a href="#" id="switch-to-login" class="text-primary">Log in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Popup Template -->
+    <div class="popup" id="project-popup">
+        <div class="popup-content">
+            <button class="popup-close" id="close-project">&times;</button>
+            <h3 class="popup-title" id="project-title">Project Details</h3>
+            <div class="popup-body" id="project-content">
+                <!-- Content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Hide loader when page is loaded
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('page-loader');
+            setTimeout(function() {
+                loader.classList.add('hidden');
+            }, 800); // Short delay for a smoother experience
+            
+            // Start typing animation
+            typeText();
+        });
+
+        // Add scroll detection for nav bar and active link highlighting
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.floating-nav');
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const scrollTopBtn = document.getElementById('scroll-top');
+            
+            // Nav bar effect
+            if (window.scrollY > 10) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            
+            // Show/hide scroll to top button
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+            
+            // Active link highlighting
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top functionality
+        document.getElementById('scroll-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add floating animation to cards on scroll
+        const cards = document.querySelectorAll('.project-card, .expertise-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => observer.observe(card));
+
+        // Add click effects to interactive elements
+        const clickElements = document.querySelectorAll('.click-effect');
+        clickElements.forEach(element => {
+            element.addEventListener('click', function(e) {
+                this.classList.add('clicked');
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 600);
+            });
+        });
+
+        // Handle popups
+        // Login popup
+        const loginBtn = document.getElementById('login-btn');
+        const loginPopup = document.getElementById('login-popup');
+        const closeLogin = document.getElementById('close-login');
+        
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            loginPopup.classList.add('active');
+        });
+        
+        closeLogin.addEventListener('click', function() {
+            loginPopup.classList.remove('active');
+        });
+
+        // Signup popup
+        const signupBtn = document.getElementById('signup-btn');
+        const signupPopup = document.getElementById('signup-popup');
+        const closeSignup = document.getElementById('close-signup');
+        
+        signupBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            signupPopup.classList.add('active');
+        });
+        
+        closeSignup.addEventListener('click', function() {
+            signupPopup.classList.remove('active');
+        });
+
+        // Switch between login and signup
+        const switchToSignup = document.getElementById('switch-to-signup');
+        const switchToLogin = document.getElementById('switch-to-login');
+        
+        switchToSignup.addEventListener('click', function(e) {
+            e.preventDefault();
+            loginPopup.classList.remove('active');
+            setTimeout(() => {
+                signupPopup.classList.add('active');
+            }, 300);
+        });
+        
+        switchToLogin.addEventListener('click', function(e) {
+            e.preventDefault();
+            signupPopup.classList.remove('active');
+            setTimeout(() => {
+                loginPopup.classList.add('active');
+            }, 300);
+        });
+
+        // Project cards popup functionality
+        const projectCards = document.querySelectorAll('.project-card');
+        const projectPopup = document.getElementById('project-popup');
+        const closeProject = document.getElementById('close-project');
+        const projectTitle = document.getElementById('project-title');
+        const projectContent = document.getElementById('project-content');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                const description = this.querySelector('p').textContent;
+                
+                projectTitle.textContent = title;
+                projectContent.innerHTML = `
+                    <p>${description}</p>
+                    <div class="mt-6">
+                        <h4 class="font-semibold text-lg mb-2">Technologies Used:</h4>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            ${Array.from(this.querySelectorAll('.tech-badge')).map(badge => 
+                                `<span class="tech-badge">${badge.textContent}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="primary-button click-effect">View Project</a>
+                    </div>
+                `;
+                
+                projectPopup.classList.add('active');
+            });
+        });
+        
+        closeProject.addEventListener('click', function() {
+            projectPopup.classList.remove('active');
+        });
+
+        // Close popups when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === loginPopup) {
+                loginPopup.classList.remove('active');
+            }
+            if (e.target === signupPopup) {
+                signupPopup.classList.remove('active');
+            }
+            if (e.target === projectPopup) {
+                projectPopup.classList.remove('active');
+            }
+        });
+
+        // Update the mobile check and ensure typing effect works on iPad
+        function isMobile() {
+            return window.innerWidth <= 600;
+        }
+
+        // Ensure typing effect always runs for iPad Pro and larger
+        function typeText() {
+            const typingElement = document.getElementById('typing-text');
+            if (isMobile()) {
+                typingElement.textContent = phrases[phraseIndex].join("\n");
+                const cursor = document.querySelector('.typing-cursor');
+                if (cursor) cursor.style.display = 'none';
+                return;
+            } else {
+                const cursor = document.querySelector('.typing-cursor');
+                if (cursor) cursor.style.display = 'inline-block';
+            }
+            const currentPhrase = phrases[phraseIndex];
+            let display = "";
+            for (let i = 0; i < lineIndex; i++) {
+                display += currentPhrase[i] + "\n";
+            }
+            const currentLine = currentPhrase[lineIndex];
+            if (isDeleting) {
+                display += currentLine.substring(0, charIndex - 1);
+                charIndex--;
+                typingDelay = deletingDelay;
+            } else {
+                display += currentLine.substring(0, charIndex + 1);
+                charIndex++;
+                typingDelay = Math.random() * 40 + 40;
+            }
+            typingElement.textContent = display;
+            if (!isDeleting && charIndex === currentLine.length) {
+                if (lineIndex < currentPhrase.length - 1) {
+                    lineIndex++;
+                    charIndex = 0;
+                    typingDelay = 400;
+                } else {
+                    isDeleting = true;
+                    typingDelay = newTextDelay;
+                }
+            } else if (isDeleting && charIndex === 0) {
+                if (lineIndex > 0) {
+                    lineIndex--;
+                    charIndex = currentPhrase[lineIndex].length;
+                    typingDelay = 200;
+                } else {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    lineIndex = 0;
+                    charIndex = 0;
+                    typingDelay = 300;
+                }
+            }
+            setTimeout(typeText, typingDelay);
+        }
+
+        // On load and resize, always start typing effect if not mobile
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('page-loader');
+            setTimeout(function() {
+                loader.classList.add('hidden');
+            }, 800);
+            setTypingDelays();
+            if (!isMobile()) {
+                typeText();
+            } else {
+                const typingElement = document.getElementById('typing-text');
+                typingElement.textContent = phrases[phraseIndex].join("\n");
+                const cursor = document.querySelector('.typing-cursor');
+                if (cursor) cursor.style.display = 'none';
+            }
+        });
+        window.addEventListener('resize', function() {
+            setTypingDelays();
+            if (!isMobile()) {
+                typeText();
+            } else {
+                const typingElement = document.getElementById('typing-text');
+                typingElement.textContent = phrases[phraseIndex].join("\n");
+                const cursor = document.querySelector('.typing-cursor');
+                if (cursor) cursor.style.display = 'none';
+            }
+        });
+
+        // Minimal Mobile Sidebar Navigation
+        (function() {
+          var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+          var mobileSidebar = document.getElementById('mobile-sidebar');
+          var mobileSidebarOverlay = document.getElementById('mobile-sidebar-overlay');
+          var sidebarClose = document.getElementById('sidebar-close');
+
+          if (mobileMenuToggle && mobileSidebar && mobileSidebarOverlay && sidebarClose) {
+            mobileMenuToggle.addEventListener('click', function() {
+              mobileSidebar.classList.add('active');
+              mobileSidebarOverlay.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            });
+            sidebarClose.addEventListener('click', function() {
+              mobileSidebar.classList.remove('active');
+              mobileSidebarOverlay.classList.remove('active');
+              document.body.style.overflow = '';
+            });
+            mobileSidebarOverlay.addEventListener('click', function() {
+              mobileSidebar.classList.remove('active');
+              mobileSidebarOverlay.classList.remove('active');
+              document.body.style.overflow = '';
+            });
+          }
+        })();
+
+        // Floating Mobile Navbar JS
+        (function() {
+          var mobileMenuBtn = document.getElementById('mobile-navbar-menu');
+          var mobileNav = document.getElementById('mobile-nav-fullscreen');
+          var mobileNavClose = document.getElementById('mobile-navbar-close');
+          var mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+          if (mobileMenuBtn && mobileNav && mobileNavClose) {
+            mobileMenuBtn.addEventListener('click', function() {
+              mobileNav.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            });
+            mobileNavClose.addEventListener('click', function() {
+              mobileNav.classList.remove('active');
+              document.body.style.overflow = '';
+            });
+            mobileNav.addEventListener('click', function(e) {
+              if (e.target === mobileNav) {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+              }
+            });
+            mobileNavLinks.forEach(function(link) {
+              link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+              });
+            });
+          }
+        })();
+
+        // Update phrases to be arrays of lines
+        const phrases = [
+          ["Shipping products", "that actually", "matter."],
+          ["Coding & vibing", "while building", "in public."],
+          ["Turning coffee", "into profitable", "SaaS."],
+          ["Building a digital", "empire, one pixel", "at a time."]
+        ];
+        let phraseIndex = 0;
+        let lineIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+    </script>
+</body>
+</html> 
