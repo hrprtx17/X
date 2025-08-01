@@ -2,7 +2,7 @@
 
 A minimal and cool personal website showcasing my work as a vibe coder and indie hacker.
 
-## Features
+Features
 
 - 🎨 Clean and minimal design
 - 🌟 Smooth animations and transitions
